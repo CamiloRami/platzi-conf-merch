@@ -1,5 +1,10 @@
+import initialState from '../initialState';
+import { Products } from '../components/Products';
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <Products products={initialState.products} />
+  );
 };
 
 export { Home };
