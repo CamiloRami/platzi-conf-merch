@@ -1,4 +1,4 @@
-import '../styles/components/Information.css'
+import '../styles/components/Information.css';
 
 const Information = () => {
   return (
@@ -21,12 +21,8 @@ const Information = () => {
           </form>
         </div>
         <div className="Information-buttons">
-          <div className="Information-back">
-            Regresar
-          </div>
-          <div className="Information-next">
-            pagar
-          </div>
+          <div className="Information-back">Regresar</div>
+          <div className="Information-next">pagar</div>
         </div>
       </div>
       <div className="Information-sidebar">
@@ -39,7 +35,7 @@ const Information = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export { Information };
