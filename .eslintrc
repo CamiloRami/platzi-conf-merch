@@ -1,40 +1,47 @@
 {
   "extends": [
-      "airbnb",
-      "prettier"
+    "airbnb",
+    "prettier",
+    "plugin:react/jsx-runtime"
   ],
   "plugins": [
-      "prettier"
+    "prettier"
   ],
   "rules": {
-      "react/jsx-filename-extension": [
+    "react/jsx-filename-extension": [
       1,
       {
-          "extensions": [
+        "extensions": [
           ".js",
           ".jsx"
-          ]
+        ]
       }
-      ],
-      "react/prop-types": 0,
-      "no-underscore-dangle": 0,
-      "import/imports-first": [
+    ],
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": [
       "error",
       "absolute-first"
-      ],
-      "import/newline-after-import": "error"
+    ],
+    "import/newline-after-import": "error",
+    "react/function-component-definition": 0,
+    "arrow-body-style": 0,
+    "import/prefer-default-export": 0
   },
   "globals": {
-      "window": true,
-      "document": true,
-      "localStorage": true,
-      "FormData": true,
-      "FileReader": true,
-      "Blob": true,
-      "navigator": true
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
   },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-      "requireConfigFile": false
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
   }
 }
