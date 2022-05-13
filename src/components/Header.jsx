@@ -4,7 +4,9 @@ import { AppContext } from '../context/AppContext';
 import '../styles/components/Header.css';
 
 const Header = () => {
-  const {state: {cart}} = useContext(AppContext);
+  const {
+    state: { cart },
+  } = useContext(AppContext);
 
   return (
     <div className="Header">

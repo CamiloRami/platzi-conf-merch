@@ -7,22 +7,22 @@ const useInitialState = () => {
   const addToCart = (payload) => {
     setState({
       ...state,
-      cart:[...state.cart, payload]
-    })
-  }
+      cart: [...state.cart, payload],
+    });
+  };
 
   const removeFromCart = (payload) => {
     setState({
       ...state,
-      cart: state.cart.filter(item => item.id !== payload.id)
-    })
-  }
+      cart: state.cart.filter((item) => item.id !== payload.id),
+    });
+  };
 
   return {
     addToCart,
     removeFromCart,
     state,
-  }
-}
+  };
+};
 
 export { useInitialState };
