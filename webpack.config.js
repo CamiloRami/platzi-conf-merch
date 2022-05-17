@@ -25,9 +25,9 @@ module.exports = {
               '@babel/preset-env',
               ['@babel/preset-react', { runtime: 'automatic' }],
             ],
-            /*plugins: [
+            plugins: [
               '@babel/plugin-transform-runtime',
-            ]*/
+            ]
           },
         },
       },
